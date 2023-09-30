@@ -5,7 +5,8 @@ print(con)
 #output [25 24 24 ... 29 28 27]
 df1=pd.DataFrame({'serial no':range(1,len(con)+1),'data':con})
 df1
-#output 	serial no	data
+#output 	
+serial no	data
 0	1	25
 1	2	24
 2	3	24
