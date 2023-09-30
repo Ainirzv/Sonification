@@ -1,1 +1,21 @@
+pip install pandas                    
+import pandas as pd
+con=np.concatenate((gray))
+print(con)
+#output [25 24 24 ... 29 28 27]
+df1=pd.DataFrame({'serial no':range(1,len(con)+1),'data':con})
+df1
+#output 	serial no	data
+0	1	25
+1	2	24
+2	3	24
+3	4	26
+4	5	29
+...	...	...
+4190204	4190205	30
+4190205	4190206	30
+4190206	4190207	29
+4190207	4190208	28
+4190208	4190209	27
+4190209 rows × 2 columns
 
