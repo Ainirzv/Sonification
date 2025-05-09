@@ -5,7 +5,7 @@ print(con)
 #output [25 24 24 ... 29 28 27]
 df1=pd.DataFrame({'serial no':range(1,len(con)+1),'data':con})
 df1
-#output 	
+'''#output 	
 serial no	data
 0	1	25
 1	2	24
@@ -33,28 +33,28 @@ serial no	data
 4190205	4190206	30
 4190206	4190207	29
 4190207	4190208	28
-4190208	4190209	27
+4190208	4190209	27'''
 freq=[349.23, 246.94 ,261.63, 293.66, 329.63, 220.01, 415.30]
 arfreq = np.array(freq)
 print(arfreq)
 df2 = pd.DataFrame({"freq":arfreq})
 df2
 
-freq
+'''freq
 0	349.23
 1	246.94
 2	261.63
 3	293.66
 4	329.63
 5	220.01
-6	415.30
+6	415.30'''
 mapping_dict = dict(zip(df1['data'].unique(), df2['freq']))
 df1['frequencies'] = df1['data'].map(mapping_dict)
 print(df1)
 #output 
 print(df1)
 print(df1)
-         serial no  data  frequencies
+'''         serial no  data  frequencies
 0                1    25       349.23
 1                2    24       246.94
 2                3    24       246.94
@@ -67,7 +67,7 @@ print(df1)
 4190207    4190208    28       220.01
 4190208    4190209    27       415.30
 
-[4190209 rows x 3 columns]
+[4190209 rows x 3 columns]'''
 arfrequencies= df1['frequencies'].to_numpy()
 arfrequencies
 #output array([349.23, 246.94, 246.94, ..., 293.66, 220.01, 415.3 ])
