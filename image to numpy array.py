@@ -14,7 +14,7 @@ cv2.waitKey(0)
 from matplotlib.image import imread
 img=imread(r"C:\Users\HP\Downloads\nasa space apps challenge\data\puppisa_w234.jpg")
 print(type(img))
-#output  <class 'numpy.ndarray'>
+'''#output  <class 'numpy.ndarray'>
 img
 #output array([[[11, 38,  0],
         [11, 36,  0],
@@ -64,11 +64,11 @@ img
         ...,
         [28, 29, 33],
         [27, 28, 30],
-        [25, 27, 26]]], dtype=uint8)
+        [25, 27, 26]]], dtype=uint8)'''
 from matplotlib.image import imread
 gray=imread(r"gray image.jpg")
 print(type(gray))
-#output  <class 'numpy.ndarray'>
+'''#output  <class 'numpy.ndarray'>
 gray
 #output  array([[25, 24, 24, ..., 38, 37, 37],
        [25, 25, 25, ..., 38, 37, 37],
@@ -76,4 +76,4 @@ gray
        ...,
        [30, 29, 29, ..., 27, 26, 25],
        [32, 32, 31, ..., 28, 27, 26],
-       [34, 33, 33, ..., 29, 28, 27]], dtype=uint8)
+       [34, 33, 33, ..., 29, 28, 27]], dtype=uint8)'''
